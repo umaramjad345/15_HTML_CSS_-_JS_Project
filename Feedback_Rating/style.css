@@ -1,0 +1,66 @@
+/* 
+        One way to remove initial window screen css
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        } */
+
+/* 
+        One Way to vertically centralize
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+/* 2nd way to vertically centralize*/
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+}
+.feedbackContainer {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  position: relative;
+}
+.emojiContainer {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+.fa-regular {
+  margin: 1px;
+  transform: translate(0);
+  transition: 0.2s;
+}
+.ratingContainer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.fa-solid {
+  color: lightgray;
+  cursor: pointer;
+}
+.fa-star.active {
+  color: gold;
+}
